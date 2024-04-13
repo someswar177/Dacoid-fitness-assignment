@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="max-w-96 max-h-3xl mx-auto">
-    <div class="text-xl text-black text-center font-medium font-sans">Workout Schedule</div>
-    <div class="text-black text-center">Feb 2024</div>
-    <img src="./photos/Calendar.png" alt="Calendar">
-    <div class="my-5">
-    <div class="py-2 border-b">06:00 AM</div>
-    <div class="py-2 border-b">07:00 AM</div>
-    <div class="py-2 border-b">08:00 AM</div>
-    <div class="py-2 relative border-b">09:00 AM
-        <div class="w-[2px] h-[2px] left-2 p-[2px] -bottom-[1.9px] rounded-full absolute bg-blue-500"></div>
-        <div class="absolute w-52 left-[0.6rem] -bottom-[1px] h-[1px] bg-blue-500"></div>
-    </div>
-    <div class="py-2 border-b">10:00 AM</div>
-    <div class="py-2 border-b">11:00 AM</div>
-    <div class="py-2 border-b">12:00 AM</div>
-    <div class="py-2 border-b">01:00 AM</div>
-    <div class="py-2 border-b">02:00 AM</div>
-    <div class="py-2 border-b">03:00 AM</div>
-    <div class="py-2 border-b">04:00 AM</div>
-    <div class="py-2 border-b">05:00 AM</div>
-    </div>
-    <div class="flex justify-center items-center">
-        <div class="bg-violet-500 rounded-full p-6">
-            <img src="./photos/+.png" alt="+" class="w-4 h-4">
+
+<body class="max-w-96 min-h-screen mx-auto">
+    <nav class="flex justify-center sticky top-0 z-10">
+        <img src="./photos/Status.png" alt="Status">
+    </nav>
+    <div class="flex items-center">
+        <a href="Android Large - 6.html">
+            <div class="bg-gray-100 rounded-sm p-2"><img src="/photos/Vectorleft.png" alt="back" class="h-2 w-2"></div>
+        </a>
+        <div class="flex justify-center w-full">
+            <div class="text-xl text-black text-center font-medium font-sans">Workout Schedule</div>
         </div>
+    </div>
+    <div class="flex flex-row justify-center">
+        <div class="p-2"><img src="/photos/Vectorleft.png" alt="back" class="h-2 w-2"></div>
+        <div class="text-black text-center">Feb 2024</div>
+        <div class="p-2"><img src="/photos/Vectorright.png" alt="back" class="h-2 w-2"></div>
+    </div>
+    <img src="./photos/Calendar.png" alt="Calendar">
+    <div class="my-5 divide-y-[1.5px] divide-gray-500">
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat">06:00 AM</div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat relative">07:00 AM
+            <div class="absolute text-base font-medium font-sans top-1/2 right-5 text-white bg-gradient-to-r from-pink-200 to-purple-300 rounded-3xl py-2 px-4">Ab Workout, 7:30am</div>
+        </div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat">08:00 AM</div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat relative">09:00 AM
+            <div class="w-[6px] h-[6px] left-2 p-[2px] -bottom-[2.5px] rounded-full absolute bg-blue-500"></div>
+            <div class="absolute w-52 left-[0.6rem] -bottom-[1px] h-[1.5px] bg-blue-500"></div>
+            <div class="absolute text-base font-medium font-Montserrat bottom-0 right-10 text-white bg-gradient-to-r from-pink-200 to-purple-300 rounded-3xl py-1 px-4">
+                Upperbody Workout, 9am
+            </div>
+        </div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat">10:00 AM</div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat">11:00 AM</div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat">12:00 AM</div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat">01:00 AM</div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat relative">02:00 AM
+            <div class="absolute text-base font-medium font-sans bottom-0 translate-x-1/2 text-gray-700 bg-gray-100 rounded-3xl py-2 px-4">
+                Lowerbody Workout, 3pm</div>
+        </div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat relative flex items-center">03:00 AM
+            <div class="absolute top-3 right-5 bg-gradient-to-r from-pink-200 to-purple-300 rounded-full p-6">
+                <img src="./photos/+.png" alt="+" class="w-4 h-4">
+            </div>
+        </div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat">04:00 AM</div>
+        <div class="py-3 px-6 text-base text-gray-800 font-medium font-Montserrat">05:00 AM</div>
     </div>
     <div class="fixed mt-8  shadow-xl rounded-md bottom-0 bg-white w-96 p-4">
         <img src="./photos/search.png" class="absolute -top-1/2 left-36" alt="search">
         <img src="./photos/nav.png" alt="nav">
-    </div>    
+    </div>
 </body>
+
 </html>

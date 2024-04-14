@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        .montserrat{
+            font-family: "montserrat";
+        }
+        .roboto{
+            font-family: "Roboto";
+        }               
+    </style>
     <style>
         /* Simulate mobile viewport */
         /* @media (min-width: 768px) {
@@ -17,37 +27,43 @@
     </style>
 </head>
 
-<body class="max-w-96 max-h-3xl mx-auto">
+<body class="max-w-[375px] min-h-screen mx-auto">
     <nav class="flex justify-center sticky top-0 z-10">
         <img src="./photos/Status.png" alt="Status">
     </nav>
-    <div class="text-gray-800 font-medium text-xl font-roboto text-left mx-5 my-5">Create an account</div>
+    <div class="roboto text-gray-800 font-semibold text-xl text-left mx-5 mt-5 mb-6">Create an account</div>
     <div class="flex flex-col justify-between mx-5">
-    <form action="" class="flex flex-col">
-        <input type="text" placeholder="First Name" class="bg-gray-200 px-3 py-2 h-12 rounded-xl my-4">
-        <input type="text" placeholder="Last Name" class="bg-gray-200 px-3 py-2 h-12  rounded-xl my-4">
-        <input type="text" placeholder="Email" class="bg-gray-200 px-3 py-2 h-12  rounded-xl my-4">
-        <input type="text" placeholder="Password" class="bg-gray-200 px-3 py-2 h-12  rounded-xl my-4">
-        <span class="flex flex-row gap-4">
-            <input type="checkbox" name="" id=""> 
-            <div class="text-gray-600 text-xs font-sans">By proceeding, I agree to all <a href="" class="text-blue-500 underline">T&C </a>and <a href="" class="text-blue-500 underline">Privacy Policy</a></div>
+    <form action="" class="montserrat flex flex-col">
+        <input type="text" placeholder="First Name" class="bg-gray-100 placeholder-gray-400 text-xs font-semibold px-5 py-2 h-12 rounded-xl my-3">
+        <input type="text" placeholder="Last Name" class="bg-gray-100 placeholder-gray-400 text-xs font-semibold px-5 py-2 h-12  rounded-xl my-3">
+        <input type="text" placeholder="Email" class="bg-gray-100 placeholder-gray-400 text-xs font-semibold px-5 py-2 h-12  rounded-xl my-3">
+        <input type="password" placeholder="Password" class="bg-gray-100 placeholder-gray-400 text-xs font-semibold px-5 py-2 h-12  rounded-xl my-3">
+        <span class="flex flex-row justify-center items-center gap-x-2 mt-3 mb-4">
+            <input type="checkbox" class="h-[22px] w-[22px]"> 
+            <div class="montserrat text-gray-500 text-xs font-medium">By proceeding, I agree to all <a href="" class="text-indigo-300 underline">T&C </a>and <a href="" class="text-indigo-300 underline">Privacy Policy</a></div>
         </span>
     </form>
-    <button class="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 text-white text-base font-semibold font-sans px-4 py-2 mt-20 rounded-lg">Create an Account</button>
+    <button onclick=redirectToNextPage() class="montserrat bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 text-white text-base font-semibold px-4 py-2 mt-20 rounded-lg">Create an Account</button>
 </div>
     <footer>
         <div class="flex items-center justify-center my-4">
-            <div class="border-t border-gray-400 flex-grow"></div>
-            <div class="mx-4 text-gray-400">Or</div>
-            <div class="border-t border-gray-400 flex-grow"></div>
+            <div class="border-t border-gray-500 flex-grow"></div>
+            <div class="montserrat mx-4 text-black">Or</div>
+            <div class="border-t border-gray-500 flex-grow"></div>
         </div>    
         <div class="flex flex-row justify-center gap-4">
-            <img src="./photos/google-logo.png" alt="" class="border border-gray-400 rounded-lg p-4">
-        <img src="./photos/facebook-logo.png" alt="" class="border border-gray-400 rounded-lg p-4 px-5">
+            <img src="./photos/google-logo.png" alt="" class="border border-gray-500 rounded-lg p-3">
+        <img src="./photos/facebook-logo.png" alt="" class="border border-gray-500 rounded-lg p-3 px-4">
         </div>
-        <pre class="text-center my-6">Already have an account?<a href="Android Large - 4.html" class="text-blue-400 underline">Login</a></pre>
+        <pre class="montserrat text-xs text-center font-medium my-6">Already have an account?<a href="Android Large - 4.html" class="text-blue-400 underline">Login</a></pre>
     </footer>
-    
+
+    <script>
+        function redirectToNextPage() {
+            window.location.href = "Android Large - 5.html";
+        }
+    </script>
+
 </body>
 
 

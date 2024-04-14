@@ -6,43 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        .montserrat{
+            font-family: "montserrat";
+        }               
+    </style>
 </head>
 
-<body class="max-w-96 min-h-screen mx-auto">
+<body class="max-w-[375px] min-h-screen mx-auto montserrat">
     <nav class="flex justify-center sticky top-0 z-10">
         <img src="./photos/Status.png" alt="Status">
     </nav>
-    <div class="flex items-center mt-8">
+    <div class="flex items-center mt-7 px-4">
         <a href="Android Large - 5.html">
             <div class="bg-gray-100 rounded-sm p-2"><img src="/photos/Vectorleft.png" alt="back" class="h-2 w-2"></div>
         </a>
         <div class="flex justify-center w-full">
-            <div class="text-xl text-black text-center font-medium font-sans">Workout Tracker</div>
+            <div class="text-xl text-black text-center font-semibold mr-8">Workout Tracker</div>
         </div>
     </div>
     <div class="flex flex-col relative mt-8">
-        <div class="absolute translate-x-[130px] flex flex-col items-center">
+        <div class="absolute translate-x-[143px] flex flex-col items-center">
             <div class="text-xs">Good job</div>
             <div class="text-xs text-gray-500 font-bold">i</div>
         </div>
-        <div class="absolute translate-x-[226px] flex flex-col items-center">
+        <div class="absolute translate-x-[236px] flex flex-col items-center">
             <div class="text-xs">less then 320cal</div>
             <div class="text-xs text-gray-500 font-bold">i</div>
         </div>
-        <a href="Android Large - 7.html"><img src="./photos/Chart.png" alt="chart" class=" mt-9"></a>
+        <a href="Android Large - 7.html"><img src="./photos/Chart.png" alt="chart" class="px-4 mt-7"></a>
     </div>
-    <img src="./photos/info.png" alt="">
-    <div class="flex flex-row justify-between mt-12">
-        <div class="text-xl text-black font-medium font-sans">Upcoming Workout</div>
-        <div>See more</div>
+    <img src="./photos/info.png" alt="" class="px-4 mt-6 mb-9">
+    <div class="flex flex-row justify-between mt-12 px-4">
+        <div class="text-base text-black font-semibold">Upcoming Workout</div>
+        <div class="text-xs text-gray-500 font-medium ">See more</div>
     </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col px-4">
         <div class="flex flex-row justify-between shadow-lg rounded-xl px-4 py-3 my-4">
             <div class="flex flex-row grow">
                 <img src="./photos/dead-lift.png" alt="dead-lift" class="borde">
-                <div class="flex flex-col">
-                    <div>Full Body Workout</div>
-                    <div>Today 3pm</div>
+                <div class="flex flex-col pl-3">
+                    <div class="text-xs font-medium mt-1">Full Body Workout</div>
+                    <div class="text-[10px] text-gray-500 mt-2">Today 3pm</div>
                 </div>
             </div>
             <img src="./photos/Toggle.png" alt="Toggle" class="py-4">
@@ -50,20 +57,20 @@
         <div class="flex flex-row justify-between shadow-lg rounded-xl px-4 py-3">
             <div class="flex flex-row grow">
                 <img src="./photos/yoga.png" alt="yoga">
-                <div class="flex flex-col">
-                    <div>Upper Body Workout</div>
-                    <div>4 Feb, 3:30 pm</div>
+                <div class="flex flex-col pl-3">
+                    <div class="text-xs font-medium mt-1">Upper Body Workout</div>
+                    <div class="text-[10px] text-gray-500 mt-2">4 Feb, 3:30 pm</div>
                 </div>
             </div>
             <img src="./photos/Toggle.png" alt="Toggle" class="py-4">
         </div>
     </div>
-    <div class="text-xl text-black font-medium font-sans">What Do You Want to Train</div>
-    <div class="flex flex-row justify-between bg-blue-300 bg-opacity-60 rounded-xl p-4">
-        <div>
-            <div>Full Body Workout</div>
-            <div>Arms</div>
-            <div>Chest</div>
+    <div class="text-base text-black font-semibold my-4 px-4">What Do You Want to Train</div>
+    <div class="flex flex-row justify-between bg-blue-300 bg-opacity-60 rounded-xl mx-4 px-5 pt-4 pb-4 mb-20">
+        <div class="">
+            <div class="text-base font-medium">Full Body Workout</div>
+            <div class="text-[10px] font-medium">Arms</div>
+            <div class="text-[10px] font-medium">Chest</div>
         </div>
         <img src="./photos/gym.png" alt="gym">
     </div>
